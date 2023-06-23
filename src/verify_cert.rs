@@ -40,7 +40,7 @@ pub fn build_chain(
 
     match used_as_ca {
         UsedAsCa::Yes => {
-            const MAX_SUB_CA_COUNT: usize = 6;
+            const MAX_SUB_CA_COUNT: usize = 10;
 
             if sub_ca_count >= MAX_SUB_CA_COUNT {
                 return Err(Error::UnknownIssuer);
